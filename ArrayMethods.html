@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Array-Methods</title>
+</head>
+
+<body>
+    <script>
+        let num = [1, 2, 3, 34, 4];
+        let b = num.toString(); // b is now string
+        console.log(b, typeof b);
+
+
+        let c = num.join("_"); // sabhi numbers ke bich me vahi ayga jo dubble coats me likho ge app 
+        console.log(c, typeof c);
+
+
+        let r = num.pop(); // last element remove krne k liye and pop returns popped element
+        console.log(num, r, typeof num);
+
+
+        let p = num.push(56); // jo value doge use object ke last me dall dega push, push returns the new array lenth 
+        console.log(p, num);
+
+
+        let a = num.shift(); // ye first element remove krta h 
+        console.log(a, num);
+
+
+        let pa = num.unshift(78); // jo value unshift ko doge vo uss value ko first element per push kr dega or sare element age age ho jayge s
+        console.log(pa, num);
+
+        let num_more = [12, 12, 23, 34, 45, 56, 67];
+        let new_num = num.concat(num_more); // concat se ye 2-3-4 objects ko add krr deta ha akk hi object me console me dekho 
+        console.log(new_num);
+
+
+        let num_one_more = [233, 555, 666, 34, 22];
+        let new_more = num.concat(num_more, num_one_more); // dekho kitni bhi objects akk sath concat krr skte h bhai hmm 
+        console.log(new_more);
+
+
+        {
+            let num = [555, 444, 333, 222, 111];
+            num.sort(); // it is  alphabetical sorting 
+            console.log(num)
+        }
+
+        {
+            let num = [1019, 1020, 2, 2, 2, 1024, 1025];
+            let num_second = num.splice(2, 3, 1021, 1022, 1023); //slice can be used to add new items to an array.
+            console.log(num);
+            console.log(num_second); // deleted value 
+        }
+        {
+            let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            let newNum = num.slice(4); // Slices out a piece from an array it creates a new array.
+            console.log(newNum)
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

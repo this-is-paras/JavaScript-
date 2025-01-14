@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Loops-With-Arrays</title>
+
+</head>
+
+<body>
+    <script>
+        let num = [2, 5, 66, 78, 9, 55, 3];
+
+        for (let i = 0; i < num.length; i++) {
+            console.log(num[i]);
+        };
+
+        console.log("__");
+
+        num.forEach((element) => {
+            console.log(element * element);
+        });
+
+        console.log("__");
+
+        // Array.from
+
+        let name = "Paras";
+        let arr = Array.from(name);
+        console.log(arr);
+
+        console.log("__");
+
+        //for...of
+        for (let i of num) {
+            console.log(i);
+        }
+        console.log("__");
+        {
+            let arr = [45, 23, 21];
+            let a = arr.map((value) => {
+                console.log(value);
+                return value + 1;
+            });
+            console.log(a);
+        }
+        console.log("__");
+        {
+            let arr = [45, 23, 21, 33, 45];
+            let a2 = arr.filter((a) => {
+                return a < 10;
+            })
+            console.log(a2);
+        }
+        console.log("__");
+        {
+            let arr = [19, 77, 45, 56];
+            let a = arr.map((value, index, array) => {
+                console.log(value, index, array);
+                return value + index;
+            });
+            console.log(a);
+        }
+    </script>
+</body>
+
+</html>
