@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Variables</title>
+
+    <style>
+        body {
+            background-color: tan;
+        }
+
+        #help,
+        #information,
+        #Objects,
+        #Open,
+        #implementation {
+            border: 5px solid black;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            display: flex;
+            margin: 10px 0 0 300px;
+
+        }
+
+        #help {
+            background-color: green;
+            text-shadow: 2px 3px 3px gold;
+        }
+
+        #information {
+            background-color: brown;
+            text-shadow: 2px 3px 3px wheat;
+        }
+
+        #Objects {
+            background-color: #008080;
+            text-shadow: 2px 3px 3px orange;
+        }
+
+        #Open {
+            background-color: #FF6F61;
+            text-shadow: 2px 3px 3px green;
+        }
+
+        #implementation {
+            background-color: gray;
+            text-shadow: 2px 3px 3px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="help">May I help you</h1>
+    <h1 id="information">Please read the website information below </h1>
+    <h1 id="implementation">Some CSS designing implementation</h1>
+    <h1 id="Objects">Learn Var, Const, Let and Objects</h1>
+    <h1 id="Open">Please Open the console</h1>
+
+    <script>
+        // console.log("This is Variables Example");
+        // let a = 67 // a contains 67
+        // console.log(a)
+        // a = "harry"
+        // console.log(a)
+
+        console.log("Objects")
+        var a = 45; // Number
+        var b = "harry"; // String
+        var c = null; // Null
+        var d = undefined; // Undefined
+        var e = [12, 12, 23, 43, "Paras"] // object
+
+        {
+            var b = "this";
+            console.log(b); // var block ke ander to value run krta hi h dekho this print ho rha h 
+        }
+        console.log(b); // or ye var block ke bhar bhi run krr rha h value ispe bhi dekho this print ho rha h
+
+        //but let me aisa seen nhi h let block ke ander hi print krta h bss value 
+
+        {
+            let b = 'that';
+            console.log(b); // let block ke ander value print krr rha h ab hum run krr rhe h to dekho that print ho gya 
+        }
+        console.log(b); // abb dekho ye abb kya print hua h this print hua ha matlb ye let ka nhi var ka print hua h
+
+    </script>
+</body>
+
+</html>
