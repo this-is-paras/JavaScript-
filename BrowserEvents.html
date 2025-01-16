@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        button {
+            width: 200px;
+            height: 200px;
+            font-size: 2em;
+            background-color: tan;
+            color: greenyellow;
+            border-radius: 30px;
+            border: 5px solid red;
+            box-shadow: 4px 2px 2px green;
+        }
+    </style>
+
+    <title>BrowserEvents</title>
+</head>
+
+<body>
+    <div class="container" onmouseenter="console.log('mouse has come into the Button')">
+        <button onclick="console.log('hello')">Click me</button>
+    </div>
+    <script>
+        document.write("Hello");
+        let b = prompt("Do you want sto run the settimeout?");
+        if (b == "yes") {
+            let a = setTimeout(function () {
+                alert("I am Inside of settimeout");
+            }, 3000);
+        } else {
+            let c = setTimeout(function () {
+                alert("Sorry your value is wrong");
+            }, 3000,);
+        };
+
+    </script>
+</body>
+
+</html>
