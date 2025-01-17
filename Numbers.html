@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: tan;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const score1 = 98;
+        const score2 = 60;
+        const score3 = 32;
+
+        const totalScore = score1 + score2 + score3;
+        const avgScore = totalScore / 3;
+        console.log("Total Score", totalScore);
+        console.log("Avg Score : ", avgScore);
+        console.log("--------------------"); // for space;
+
+
+        const plates = 20;
+        const people = 7;
+        let remPlates = 20 % 7;
+        remPlates++;
+        const message = "There are " + remPlates + " paltes available";
+        console.log(message);
+        console.log("--------------------"); // for space;
+
+
+        let a = "98";
+        let b = "10";
+        console.log(a - b, typeof a, typeof b); // Result is 1098 because both are string and it plus Like ("98""10 = 9810")
+        console.log("--------------------"); // for space;
+
+        let fruits = ["apple", "Banana", "Kiwi", "Orange", 77];
+        let aa = fruits[0]; // first value in array (apple) Selected
+        fruits[4] = "Lichi"; // changed the 4th value in the array
+        console.log(aa);
+        console.log(fruits);
+        console.log("--------------------"); // for space;
+
+        {
+            function hello() {
+                console.log("Hello There BoB");
+                console.log("Hello There Ritu");
+                console.log("Hello There AnnA");
+            }
+            hello();
+            hello(); // you will open the console and see what happen;
+            hello();
+        }
+        console.log("--------------------"); // for space;
+        {
+            function greet(name) {
+                console.log("Hello there" + name);
+            };  // if we have to change name only so ye need not to create a new function we use parameters
+            greet("BoB");
+            greet("Ritu");
+            greet("AnnA");
+        }
+    </script>
+
+</body>
+
+</html>
