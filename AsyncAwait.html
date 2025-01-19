@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        async function Paras() {
+            let delhiWeather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("27 Deg");
+                }, 2000);
+            });
+            let bangaloreWeather = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("21 Deg");
+                }, 5000);
+            });
+            // delhiWeather.then(alert)
+            // bangaloreWeather.then(alert)
+            console.log("Fetching Delhi Weather Please wait ...");
+            let delhiW = await delhiWeather;
+            console.log("Fetched delhi Weather: " + delhiW);
+            console.log("Fetching bangalore Weather Please wait ...");
+            let bangaloreW = await bangaloreWeather
+            console.log("Fetched bangalore Weather: " + bangaloreWeather);
+            return [delhiW, bangaloreW];
+        }
+        console.log("Welcome to weather control room");
+        let a = Paras();
+        a.then((value) => {
+            console.log(value);
+        });
+
+    </script>
+</body>
+
+</html>
